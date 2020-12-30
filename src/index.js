@@ -10,14 +10,14 @@ const w = window.innerWidth;
 function App() {
   return (
     <div className="App">
-      <h1>React SVG Pan Zoom Remote file loader</h1>
+      <h1>v0.1</h1>
       <h3>Width : ${w}</h3>
 
       <ReactSvgPanZoomLoader
         src="test-digram.svg"
         render={content => (
           <UncontrolledReactSVGPanZoom width={w} height={500}>
-            <svg width={w} height={500}>
+            <svg width={500} height={500}>
               <g>
                 <rect x="400" y="40" width="100" height="200" fill="#4286f4" stroke="#f4f142" onClick={() => alert('blue')} />
                 <circle cx="108" cy="108.5" r="100" fill="#0ff" stroke="#0ff" onClick={() => alert('cyan')} />
